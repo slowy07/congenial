@@ -5,4 +5,3 @@
   <image width="58" height="42" source="../../graphics/terrain/crate.png"/>
  </tile>
 </tileset>
-

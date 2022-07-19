@@ -11,4 +11,3 @@
   <image width="128" height="128" source="../../graphics/terrain/palm_bg/bg_palm_1.png"/>
  </tile>
 </tileset>
-
