@@ -89,10 +89,5 @@ while True:
     screen.fill("grey")
     game.run()
 
-    if game.run():
-        print("running")
-    else:
-        print("stop")
-
     pygame.display.update()
     clock.tick(60)
