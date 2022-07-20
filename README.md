@@ -38,7 +38,7 @@ python main.py
 
 ```
 left arrow = walk left
-space = jump
+space = jump, select level
 right arrow = walk right
 ```
 
