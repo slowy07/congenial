@@ -6,10 +6,14 @@ from random import choice, randint
 
 
 class Sky:
-    def __init__(self, horizon, style = 'level'):
-        self.top = pygame.image.load('./graphics/decoration/sky/sky_top.png').convert()
-        self.bottom = pygame.image.load('./graphics/decoration/sky/sky_bottom.png').convert()
-        self.middle = pygame.image.load('./graphics/decoration/sky/sky_middle.png').convert()
+    def __init__(self, horizon, style="level"):
+        self.top = pygame.image.load("./graphics/decoration/sky/sky_top.png").convert()
+        self.bottom = pygame.image.load(
+            "./graphics/decoration/sky/sky_bottom.png"
+        ).convert()
+        self.middle = pygame.image.load(
+            "./graphics/decoration/sky/sky_middle.png"
+        ).convert()
         self.horizon = horizon
 
         # strech
@@ -21,20 +25,20 @@ class Sky:
         if self.style == "overworld":
             palm_surface = import_folder("./graphics/overworld/palms")
             self.palms = []
-            
+
             for surface in [choice(palm_surface) for image in range(10)]:
-                x = randint(0, screen_with)
-                y = (self.horizon * tile_size) + radint(50, 100)
-                rect = surface.get_rect(midbottom = (x, y))
+                x = randint(0, screen_width)
+                y = (self.horizon * tile_size) + randint(50, 100)
+                rect = surface.get_rect(midbottom=(x, y))
                 self.palms.append((surface, rect))
 
             cloud_surface = import_folder("./graphics/overworld/clouds")
             self.clouds = []
-            
+
             for surface in [choice(cloud_surface) for image in range(10)]:
-                x = radint(0, screen_width)
-                y = radint(0, (self.horizon * tile_size) - 100)
-                rect = surface.get_rect(midbottom = (x, y))
+                x = randint(0, screen_width)
+                y = randint(0, (self.horizon * tile_size) - 100)
+                rect = surface.get_rect(midbottom=(x, y))
                 self.clouds.append((surface, rect))
 
     def draw(self, surface):
@@ -47,11 +51,12 @@ class Sky:
             else:
                 surface.blit(self.bottom, (0, y))
 
-        if self.style == 'overworld':
+        if self.style == "overworld":
             for palm in self.palms:
                 surface.blit(palm[0], palm[1])
             for cloud in self.clouds:
                 surface.blit(cloud[0], cloud[1])
+
 
 class Water:
     def __init__(self, top, level_width):

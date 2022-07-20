@@ -3,13 +3,13 @@
  <editorsettings>
   <export target="../0/level_0.csv" format="csv"/>
  </editorsettings>
- <tileset firstgid="1" source="./tilesets/terrain_tiles.tsx"/>
- <tileset firstgid="17" source="./tilesets/coin_tiles.tsx"/>
- <tileset firstgid="19" source="./tilesets/grass_tiles.tsx"/>
- <tileset firstgid="24" source="./tilesets/palms.tsx"/>
- <tileset firstgid="27" source="./tilesets/crates.tsx"/>
- <tileset firstgid="28" source="./tilesets/player_tiles.tsx"/>
- <tileset firstgid="30" source="./tilesets/enemy_tiles.tsx"/>
+ <tileset firstgid="1" source="../tilesets/terrain_tiles.tsx"/>
+ <tileset firstgid="17" source="../tilesets/coin_tiles.tsx"/>
+ <tileset firstgid="19" source="../tilesets/grass_tiles.tsx"/>
+ <tileset firstgid="24" source="../tilesets/palms.tsx"/>
+ <tileset firstgid="27" source="../tilesets/crates.tsx"/>
+ <tileset firstgid="28" source="../tilesets/player_tiles.tsx"/>
+ <tileset firstgid="30" source="../tilesets/enemy_tiles.tsx"/>
  <layer id="5" name="bg_palms" width="60" height="11">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
